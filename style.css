@@ -1,0 +1,45 @@
+body {
+    background-color: lightpink;
+    font-family: sans-serif;
+    margin: 40px;
+    line-height: 1.6;
+    color: #333333;
+}
+ul {list-style-type: none; /* cela enleve les petits points noirs */ padding: 0;           /* cela aligne la liste avec le reste du texte */}
+li {margin-bottom: 10px;  /* Ajoute un peu d'espace entre chaque article */ padding-left: 15px;    /* Crée un petit décalage a gauche */ border-left: 3px solid gold; /* Ajoute une petite barre dorée a gauche de chaque article */}
+h1 {text-align: center; color: #b8860b; /* une couleur "Or sombre" pour le titre principal */ text-transform: uppercase; /* Met tout le titre en majuscules */ letter-spacing: 2px; /* Espace un peu les lettres pour plus d'élégance */}
+h2 {color: #8b4513; /* une couleur "Marron cuir" pour tes spécialites */ border-bottom: 2px solid #b8860b; /* Ajoute une ligne dorée sous le titre */ display: inline-block; /* Permet a la ligne de ne pas faire toute la largeur */ padding-bottom: 5px;}
+ul {
+    display: flex;       /* Aligne les titres côte à côte */
+    gap: 15px;           /* Espace entre les boutons */
+    padding: 0;
+}
+
+li {
+    list-style: none;    /* Enlève les puces */
+    background-color: #8b4513; /* Marron (assorti à vos titres) */
+    padding: 10px 20px;  /* Crée la forme du bouton */
+    border-radius: 5px;  /* Arrondit les coins */
+    color: white;        /* Texte en blanc */
+}
+.grille-produits img {
+    width: 250px;      /* Largeur de l'image */
+    height: 300px;     /* Hauteur de l'image */
+    object-fit: cover; /* Pour que l'image remplisse le cadre sans se déformer */
+    margin: 10px;      /* Espace entre les photos */
+    border-radius: 8px; /* Coins légèrement arrondis */
+}
+/* Animation pour faire clignoter les liens du menu */
+ul li a {
+    animation: clignotement 1.5s infinite;
+    font-weight: bold;
+}
+
+@keyframes clignotement {
+    0% { opacity: 1; color: white; }
+    50% { opacity: 0.5; color: #ff0000; } /* Change de couleur au milieu */
+    100% { opacity: 1; color: white; }
+}
+section {
+  scroll-margin-top: 80px; /* Ajustez ce chiffre pour laisser plus ou moins d'espace en haut */
+}
